@@ -1,6 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import photoStore from '../store/PhotoStore';
+import './Pagination.css';
 
 const Pagination = observer(() => {
   const pages = [...Array(photoStore.totalPages).keys()].map(i => i + 1);

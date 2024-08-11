@@ -3,7 +3,7 @@ import { createDirectus, rest, readItems } from '@directus/sdk';
 
 configure({ enforceActions: 'never' });
 
-const client = createDirectus('http://app.xn--h1alhf.xn--p1acf').with(rest());
+const client = createDirectus('http://localhost:8055').with(rest());
 
 class AlbumStore {
   albums = [];
@@ -13,9 +13,10 @@ class AlbumStore {
   }
 
   async fetchAlbums() {
-    const response = await client.request(readItems('albums'));
+    const response = await client.request(readItems('albums', {
+      fields: ['id', 'name', 'Image']
+    }));
     this.albums = response;
-    console.log(response)
   }
 }
 
