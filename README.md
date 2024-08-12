@@ -30,7 +30,7 @@ docker-compose up -d
 
 ![open](http://localhost)
 ##### C. Скрины рабочего приложения 
-![Главное меню](./scrin/main.png)
-![Фото галлерея](./scrin/1.png)
-![Модальное окно](./scrin/2.png)
+![Главное меню](./scrin/main.PNG)
+![Фото галлерея](./scrin/1.PNG)
+![Модальное окно](./scrin/2.PNG)
 
