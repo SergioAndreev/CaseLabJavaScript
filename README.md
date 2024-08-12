@@ -33,4 +33,3 @@ docker-compose up -d
 ![Главное меню](./scrin/main.PNG)
 ![Фото галлерея](./scrin/1.PNG)
 ![Модальное окно](./scrin/2.PNG)
-
